@@ -19,7 +19,7 @@ const getPokemon = async pokemonId => {
 
 const getAllPokemons = async () => {
   try {
-    const res = await axios('https://pokeapi.co/api/v2/pokemon?limit=151');
+    const res = await axios('https://pokeapi.co/api/v2/pokemon?limit=152');
     const data = res.data.results.map((i, idx) => {
       return {
         id: idx + 1,
